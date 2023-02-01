@@ -14,8 +14,8 @@ use App\Http\Controllers\HomepageController;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/login', function () {
+    return view('admin.login');
+});
 
 Route::get('/', [HomepageController::class, 'index'])->name('homepage');
